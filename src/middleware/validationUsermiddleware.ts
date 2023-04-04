@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
 import { cpf as cpff } from 'cpf-cnpj-validator';
-import { isValidEmail } from 'docs-validator-br';
 
 export const validationUserMiddleware = (
 	req: Request,
@@ -20,10 +19,10 @@ export const validationUserMiddleware = (
 			return res.status(400).json({ message: `CPF inválido` });
 		}
 	}
-	if (email) {
-		if (!isValidEmail(email)) {
-			return res.status(400).json({ message: `E-mail inválido` });
-		}
-	}
+	// if (email) {
+	// 	if (!isValidEmail(email)) {
+	// 		return res.status(400).json({ message: `E-mail inválido` });
+	// 	}
+	// }
 	next();
 };

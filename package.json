@@ -19,7 +19,6 @@
 	"dependencies": {
 		"typescript": "^4.9.5",
 		"cpf-cnpj-validator": "^1.0.3",
-		"docs-validator-br": "^1.0.2",
 		"express": "^4.18.2",
 		"uuid": "^9.0.0"
 	}
