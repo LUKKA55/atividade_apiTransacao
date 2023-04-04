@@ -17,7 +17,7 @@
 		"ts-node-dev": "^2.0.0"
 	},
 	"dependencies": {
-		"typescript": "^5.0.2",
+		"typescript": "^4.9.5",
 		"cpf-cnpj-validator": "^1.0.3",
 		"docs-validator-br": "^1.0.2",
 		"express": "^4.18.2",
